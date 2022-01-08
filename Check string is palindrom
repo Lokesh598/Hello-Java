@@ -1,0 +1,15 @@
+int isPalindrome(String S) {
+        // code here
+        String str = S;
+        int begin = 0;
+    int end = str.length()-1;
+    while(begin<end)
+    {
+        if(str.charAt(begin++)!=str.charAt(end--))
+        {
+            return 0;
+        }
+    }
+    return 1;
+    
+    }
