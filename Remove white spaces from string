@@ -1,0 +1,19 @@
+String modify(String S)
+    {
+        // your code here
+        String w = "";
+        int l = S.length();
+        for(int i =0; i<l;i++)
+        {
+            char ch = S.charAt(i);
+            if(ch!=' ')
+            {
+                w = w + ch;
+            }
+            else
+            {
+                ch = ch++;
+            }
+        }
+        return w;
+    }
