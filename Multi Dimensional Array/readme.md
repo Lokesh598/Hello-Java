@@ -2,6 +2,9 @@
 
 Multidimensional arrays are arrays of arrays with each element of the array holding the reference of other arrays. 
 These are also known as <a href = "https://www.geeksforgeeks.org/jagged-array-in-java/">Jagged Arrays</a>. A multidimensional array is created by appending one set of square brackets ([]) per dimension. 
+
+** one dimensional array of one dimensional arrays is called two-dimensional array.
+
 Examples: 
 ```java
 data_type[][] array_name = {
