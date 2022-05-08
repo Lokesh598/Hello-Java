@@ -1,5 +1,6 @@
 # Array
 
+In java arrays are obkects.
 1. Arrays in Java work differently than they do in C/C++.
 
 A Java array variable can also be declared like other variables with [] after the data type.
@@ -27,10 +28,32 @@ example:
 int myArray[];
 ```
 
-intializing an array
+#### intializing an array
+In Single Line 
 ```
 var-name = new type[size];
+
+int [] arr= {1,2,3,4,5,6,7};
 ```
+
+Using loop
+
+An array can be initialized using a loop.
+```java
+import java.io.*;
+import java.util.*;
+public class Example {
+    public static void main(String[] args) {
+        int[] arr = new int[5];
+        Scanner Scan = new Scanner(System.in);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Scan.nextInt();
+        }
+    }
+}
+Input: 2 3 4 5 6
+```
+
 example:
 ```
 int myArray[];
@@ -59,6 +82,24 @@ int[] intArray = new int[]{1,2,3,4,5,6};
 for(int i = 0; i<intArray.length; i++) {
   System.out.println("Element at index: " + i + arr[i]);
 }
+```
+
+using FOR-EACH loop
+This is a special type of loop to access array elements of the array. But this loop can be used only to traverse an array, and nothing can be changed in the array using this loop.
+
+```java
+import java.io.*;
+import java.util.*;
+public class Solutions {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        for (int i: arr) {
+            System.out.print(i + " ");
+        }
+    }
+}
+Output: 
+10 20 30 40 50
 ```
 
 ## Array of Object
