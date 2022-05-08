@@ -57,8 +57,8 @@ String str = new String(str);
    
    ```
 
-
-
+# String methods
+  <a href= "https://www.geeksforgeeks.org/string-class-in-java/?ref=lbp">link</a>
  
 
 
