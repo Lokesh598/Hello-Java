@@ -61,4 +61,78 @@ for(int i = 0; i<intArray.length; i++) {
 }
 ```
 
+## Array of Object
 
+An array of objects is created like an array of primitive type data items in the following way. 
+```java
+Student[] arr = new int[7]; // student is user defined class
+```
+
+```java
+// Java program to illustrate creating
+// an array of objects
+
+class Student
+{
+	public int roll_no;
+	public String name;
+	Student(int roll_no, String name)
+	{
+		this.roll_no = roll_no;
+		this.name = name;
+	}
+}
+
+// Elements of the array are objects of a class Student.
+public class GFG
+{
+	public static void main (String[] args)
+	{
+		// declares an Array of integers.
+		Student[] arr;
+
+		// allocating memory for 5 objects of type Student.
+		arr = new Student[5];
+
+		// initialize the first elements of the array
+		arr[0] = new Student(1,"aman");
+
+		// initialize the second elements of the array
+		arr[1] = new Student(2,"vaibhav");
+
+		// so on...
+		arr[2] = new Student(3,"shikar");
+		arr[3] = new Student(4,"dharmesh");
+		arr[4] = new Student(5,"mohit");
+
+		// accessing the elements of the specified array
+		for (int i = 0; i < arr.length; i++)
+			System.out.println("Element at " + i + " : " +
+						arr[i].roll_no +" "+ arr[i].name);
+	}
+}
+```
+
+### What happens if we try to access elements outside the array size?
+JVM throws ArrayIndexOutOfBoundsException to indicate that the array has been accessed with an illegal index. 
+
+```java
+package javaLearning;
+public class printArray
+{
+	public static void main (String[] args)
+	{
+		int[] arr = new int[2];
+		arr[0] = 10;
+		arr[1] = 20;
+
+		for (int i = 0; i <= arr.length; i++)
+			System.out.println(arr[i]);
+	}
+}
+
+error: 10
+20
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at javaLearning/javaLearning.printArray.main(printArray.java:11)
+```
