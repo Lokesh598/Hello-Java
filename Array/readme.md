@@ -1,6 +1,6 @@
 # Array
 
-In java arrays are obkects.
+In java arrays are objects.
 1. Arrays in Java work differently than they do in C/C++.
 
 2. A Java array variable can also be declared like other variables with [] after the data type.
