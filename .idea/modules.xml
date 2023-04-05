@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Hello-Java.iml" filepath="$PROJECT_DIR$/.idea/Hello-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections-in-java/Collections-in-java.iml" filepath="$PROJECT_DIR$/Collections-in-java/Collections-in-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lambda-in-java/Lambda-in-java.iml" filepath="$PROJECT_DIR$/Lambda-in-java/Lambda-in-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread-in-java/Tread.iml" filepath="$PROJECT_DIR$/Thread-in-java/Tread.iml" />
     </modules>
   </component>
 </project>
